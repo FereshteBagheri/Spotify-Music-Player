@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <audio id="main-audio" src="#"></audio>
+
+    <div class="menu-page page active">
+      <div class="wrapper menu-wrapper">
+        <div class="header">
+          <p class="menu playlists">Playlists</p>
+          <p class="menu artists">Artists</p>
+          <p class="menu albums">Albums</p>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="search..." id="search-input" />
+          <button class="btn search-btn">search</button>
+        </div>
+        <div class="content menu-content"></div>
+      </div>
+    </div>
+
+    <div class="player-page page">
+      <div class="wrapper player-wrapper page">
+        <div class="top-bar">
+          <i class="material-icons back-to-album">expand_more</i>
+
+          <i class="material-icons">more_horiz</i>
+        </div>
+
+        <div class="img-area">
+          <img id="player-music-cover" src="#" alt="" />
+        </div>
+
+        <div class="song-details">
+          <div class="top">
+            <p class="name"></p>
+            <i class="material-icons favorite">favorite_outlined</i>
+          </div>
+          <p class="artist"></p>
+        </div>
+
+        <div class="progress-area">
+          <div class="progress-bar"></div>
+          <div class="song-timer">
+            <span class="current-time"></span>
+            <span class="max-duration"></span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <i id="shuffle-plist" class="material-icons" title="Playlist shuffled"
+            >shuffle</i
+          >
+          <i id="prev" class="material-icons">skip_previous</i>
+          <div class="play-pause">
+            <i class="material-icons play">play_arrow</i>
+          </div>
+          <i id="next" class="material-icons">skip_next</i>
+          <i id="repeat-plist" class="material-icons" title="Playlist looped"
+            >repeat</i
+          >
+        </div>
+        <div class="bottom-bar">
+          <i class="material-icons">devices</i>
+          <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+      </div>
+    </div>
+
+    <div class="music-list-page page">
+      <div class="wrapper music-list-wrapper">
+        <div class="top-bar">
+          <i class="material-icons album-back">expand_more</i>
+        </div>
+
+        <div class="img-area">
+          <img class="album-cover" src="#" alt="" />
+        </div>
+        <div class="album-details">
+          <h3 class="album-name">album name</h3>
+          <h4 class="album-artist">album artist</h4>
+        </div>
+
+        <div class="album-play-btn">
+          <i class="material-icons">play_arrow</i>
+        </div>
+        <div class="content music-list-content">
+          <li class="music">
+            <div class="sss">
+              <img src="#" alt="" class="music-cover-img" />
+              <div class="music-details">
+                <h3 class="music-name">music name</h3>
+                <h5 class="music-artist">artist</h5>
+              </div>
+            </div>
+            <i class="material-icons favorite">favorite_outlined</i>
+          </li>
+
+          <li class="album" id="114701">
+            <img src="" class="album-img" />
+            <p>َAlbum Name</p>
+          </li>
+        </div>
+      </div>
+    </div>
+    <script src="tabs.js"></script>
+    <script src="db.js"></script>
+    <script src="albums_tab.js"></script>
+    <script src="player.js"></script>
+    <script src="music-list.js"></script>
+    <script src="playlists_tab.js"></script>
+    <script src="artists_tab.js"></script>
+  </body>
+</html>

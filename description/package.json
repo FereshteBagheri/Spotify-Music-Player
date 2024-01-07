@@ -1,0 +1,15 @@
+{
+  "name": "spotify",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel source/index.html",
+    "build": "parcel build source/index.html"
+
+  },
+  "browserlist": "last 1 Chrome versions",
+  "devDependencies": {
+    "parcel": "^2.5.0",
+    "typescript": "^4.6.4"
+  }
+}
